@@ -17,6 +17,10 @@ config :bifurcator, BifurcatorWeb.Endpoint,
   render_errors: [view: BifurcatorWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Bifurcator.PubSub, adapter: Phoenix.PubSub.PG2]
 
+config :bifurcator, BifurcatorWeb.PathSelectorController,
+  delegate: {BifurcatorWeb.PathOneController, :index}
+  # delegate: {BifurcatorWeb.PathTwoController, :index}
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
