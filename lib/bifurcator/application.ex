@@ -9,7 +9,7 @@ defmodule Bifurcator.Application do
     # List all child processes to be supervised
     children = [
       # Start the Ecto repository
-      Bifurcator.Repo,
+      # Bifurcator.Repo,
       # Start the endpoint when the application starts
       BifurcatorWeb.Endpoint
       # Starts a worker by calling: Bifurcator.Worker.start_link(arg)

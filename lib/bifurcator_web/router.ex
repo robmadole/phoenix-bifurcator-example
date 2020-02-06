@@ -16,7 +16,7 @@ defmodule BifurcatorWeb.Router do
   scope "/", BifurcatorWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    # get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
